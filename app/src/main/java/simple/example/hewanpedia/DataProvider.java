@@ -6,9 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import simple.example.hewanpedia.model.Anjing;
+import simple.example.hewanpedia.model.Ayam;
 import simple.example.hewanpedia.model.Hewan;
 import simple.example.hewanpedia.model.Kucing;
-import simple.example.hewanpedia.model.Kelinci;
+
 
 public class DataProvider {
     private static List<Hewan> hewans = new ArrayList<>();
@@ -46,27 +47,26 @@ public class DataProvider {
                 "Anjing dari daerah Shiba ini gesit dan lincah sehingga awalnya banyak digunakan untuk berburu ", R.drawable.dog_shiba));
         return anjings;
     }
-    private static List<Kelinci> initDataKelinci(Context ctx) {
-        List<Kelinci> Kelincis= new ArrayList<>();
-        Kelincis.add(new Kelinci("Anggora", "turki",
-                "kelinci anggora memiliki ciri-ciri bulu yang tebal dan lembit. dan pada bagian ujung telinga dan kakinya memiliki bulu berwarna yang berbeda, ada yang berwarna puth, coklat, abu-abu dan hitam.\n" , R.drawable.kelinci_anggora));
-        Kelincis.add(new Kelinci("Rex", "Argentina",
-                " kelici ini dibudidayakan untuk diambil daging dan bulunya. Bulu pada kelinci Rex juga biaasnya dimanfaatkan untuk bahan baku jaket.",R.drawable.kelinci_rex));
-        Kelincis.add(new Kelinci("Himalaya", "Himalaya",
-                "Jenis kelinci yang satu ini cukup terkenal karena biasanya memiliki warna dasar putih dan warna lain pada bagian hidung, ekor, telinga, dan kaki.", R.drawable.kelinci_himalaya));
-        Kelincis.add(new Kelinci("Dutch", "Belanda",
-                "Kelinci ini termasuk kelinci yang paling banyak peminatnya di Indonesia, baik para peternak maupun para pecinta hewan peliharaan.", R.drawable.kelinci_dutch));
-        Kelincis.add(new Kelinci("satin", "Amerika",
-                "Jenis kelinci ini cukup unik, karena biasanya kelinci Satin lebih besar daripada jantan. Dan berat badannya berkisar diantara 3,8 – 5kg.", R.drawable.kelinci_satin));
-        Kelincis.add(new Kelinci("lyon", "Inggris",
-                " Bulunya yang lebat di bagian lehernya tampak seperti singa, sehingga jenis kelici ini diberi nama Lion.", R.drawable.kelinci_lyon));
-                return Kelincis;
+    private static List<Ayam> initDataAyam(Context ctx) {
+        List<Ayam> Ayams= new ArrayList<>();
+        Ayams.add(new Ayam("Cemani", "indonesia",
+                "Inilah jenis ayam khas dan asli milik negara kita, Indonesia. Asal nama cemani sendiri berasal dari bahasa Sansekerta yang jika diterjemahkan ke dalam bahasa Indonesia berarti hitam legam.\n" , R.drawable.ayam_cemani));
+        Ayams.add(new Ayam("cochin", "china",
+                "  Ayam jenis cochin memiliki bobot 4,5-5 kg untuk yang berjenis kelamin jantan dan 3,5-4 kg untuk yang berjenis kelamin betina.",R.drawable.ayam_cochin));
+        Ayams.add(new Ayam("orpingthon", "orpingthon",
+                "ayam ini adalah hasil dari persilangan antara ayam Minorca yang berkelamin jantan dengan dengan ayam Plymouth Rock betina berwarna hitam dan kemudian dari hasilnya persilangan kedua ayam tersebut dipersilangkan lagi dengan Ayam Langshan. ", R.drawable.ayam_orpingthon));
+        Ayams.add(new Ayam("polish", "poland",
+                "Ciri khas ayam poland yang paling menonjol adalah jambul di kepalanya yang bisa ditata dengan beragam bentuk. Bentuk jambulnya memang nyentrik.", R.drawable.ayam_polish));
+        Ayams.add(new Ayam("salkiehen", "china",
+                "Salah satu keunikan dari ayam silkia adalah dia memiliki jari yang berjumlah 5, berbeda dengan jenis ayam lainnya yang rata-rata memiliki jumlah jari sebanyak 4 saja. Keunikan lainnya adalah apabila kita cabut semua bulunya tersebut, maka dagingnya memiliki kemiripan dengan daging ayam cemani yaitu sama-sama memiliki warna hitam dan gelap baik kulit, ceker, paruh maupun organ dalamnya.", R.drawable.ayam_selkiehen));
+
+                return Ayams;
     }
 
         private static void initAllHewans(Context ctx) {
         hewans.addAll(initDataKucing(ctx));
         hewans.addAll(initDataAnjing(ctx));
-        hewans.addAll(initDataKelinci(ctx));
+        hewans.addAll(initDataAyam(ctx));
 
     }
 

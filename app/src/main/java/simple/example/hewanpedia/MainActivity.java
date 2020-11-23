@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton btnKucing,btnAnjing,btnKelinci;
+    ImageButton btnKucing,btnAnjing,btnAyam;
     public static final String JENIS_GALERI_KEY = "JENIS_GALERI";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
     private void inisialisasiView() {
         btnKucing = findViewById(R.id.btn_buka_ras_kucing);
         btnAnjing = findViewById(R.id.btn_buka_ras_anjing);
-        btnKelinci = findViewById(R.id.btn_buka_ras_kelinci);
+        btnAyam = findViewById(R.id.btn_buka_ras_ayam);
         btnKucing.setOnClickListener(view -> bukaGaleri("Kucing"));
         btnAnjing.setOnClickListener(view -> bukaGaleri("Anjing"));
-        btnKelinci.setOnClickListener(view -> bukaGaleri("Kelinci"));
+        btnAyam.setOnClickListener(view -> bukaGaleri("Ayam"));
     }
 
     private void bukaGaleri(String jenisHewan) {

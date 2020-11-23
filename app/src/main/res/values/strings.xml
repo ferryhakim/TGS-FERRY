@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Kucing, Anjing &amp;k kura kura Pedia</string>
-    <string name="kucing_kelinci_amp_anjing_pedia"><![CDATA[Kucing,Kelinci & Anjing Pedia]]></string>
+    <string name="kucing_ayam_amp_anjing_pedia"><![CDATA[Kucing,Ayam & Anjing Pedia]]></string>
     <string name="todo">TODO</string>
     <string name="tekan_gambar_untuk_membuka_galeri">(Tekan gambar untuk membuka galeri)</string>
+
+
 
 </resources>

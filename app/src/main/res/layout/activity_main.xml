@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-    android:text="@string/kucing_kelinci_amp_anjing_pedia"
+        android:text="@string/kucing_ayam_amp_anjing_pedia"
         android:textStyle="bold"
         android:textColor="@color/design_default_color_primary_dark"
         android:textSize="29sp"
@@ -46,13 +46,13 @@
             android:scaleType="fitCenter"
             android:contentDescription="@string/todo" />
         <ImageButton
-            android:id="@+id/btn_buka_ras_kelinci"
+            android:id="@+id/btn_buka_ras_ayam"
             android:padding="16dp"
             android:layout_margin="8dp"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="150dp"
-            android:src="@drawable/kelinci_anggora"
+            android:src="@drawable/ayam_cemani"
             android:scaleType="fitCenter"
             android:contentDescription="@string/todo" />
     </LinearLayout>
