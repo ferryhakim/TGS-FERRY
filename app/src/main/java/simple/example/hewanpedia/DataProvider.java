@@ -8,6 +8,7 @@ import java.util.List;
 import simple.example.hewanpedia.model.Anjing;
 import simple.example.hewanpedia.model.Hewan;
 import simple.example.hewanpedia.model.Kucing;
+import simple.example.hewanpedia.model.Turtle;
 
 public class DataProvider {
     private static List<Hewan> hewans = new ArrayList<>();
@@ -45,10 +46,28 @@ public class DataProvider {
                 "Anjing dari daerah Shiba ini gesit dan lincah sehingga awalnya banyak digunakan untuk berburu ", R.drawable.dog_shiba));
         return anjings;
     }
+    private static List<Turtle> initDataTurtle(Context ctx) {
+        List<Turtle> Turtles= new ArrayList<>();
+        Turtles.add(new Turtle("Alligator Snaping", "Amerika",
+                "Kura-kura ini memiliki tampilan paling seram dibandingkan yang lain.\n" +
+                        "\n" +
+                        "Tidak hanya seram, kura-kura ini juga bisa menggigit.", R.drawable.turtle_alligator));
+        Turtles.add(new Turtle("Asia Forest Tortoise", "Asia",
+                " Habitat asli mereka adalah semak belukar dan rerumputan.",R.drawable.turtle_asia));
+         Turtles.add(new Turtle("Cherry Head Tortoise", "Brazil",
+                "Corak oranye pada kepa dan cangkangnya membuat kura-kura ini tampak seperti ceri jika dilihat sepintas.", R.drawable.turtle_cherry));
+        Turtles.add(new Turtle("Radiated Tortoise", "Madagaskar",
+                "Kura-kura yang berasal dari Madagaskar ini memiliki corak yang sangat mencolok", R.drawable.turtle_radiated));
+        Turtles.add(new Turtle("Sulcata", "Afrika",
+                "Bernama sulcata tortoise, hewan berwarna kekuningan yang tinggal di iklim gurun ini ternyata dapat beradaptasi dengan iklim tropis di Indonesia.", R.drawable.turtle_sulcata));
+                return Turtles;
+    }
 
-    private static void initAllHewans(Context ctx) {
+        private static void initAllHewans(Context ctx) {
         hewans.addAll(initDataKucing(ctx));
         hewans.addAll(initDataAnjing(ctx));
+        hewans.addAll(initDataTurtle(ctx));
+
     }
 
     public static List<Hewan> getAllHewan(Context ctx) {
