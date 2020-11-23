@@ -8,7 +8,7 @@ import java.util.List;
 import simple.example.hewanpedia.model.Anjing;
 import simple.example.hewanpedia.model.Hewan;
 import simple.example.hewanpedia.model.Kucing;
-import simple.example.hewanpedia.model.Turtle;
+import simple.example.hewanpedia.model.Kelinci;
 
 public class DataProvider {
     private static List<Hewan> hewans = new ArrayList<>();
@@ -46,27 +46,27 @@ public class DataProvider {
                 "Anjing dari daerah Shiba ini gesit dan lincah sehingga awalnya banyak digunakan untuk berburu ", R.drawable.dog_shiba));
         return anjings;
     }
-    private static List<Turtle> initDataTurtle(Context ctx) {
-        List<Turtle> Turtles= new ArrayList<>();
-        Turtles.add(new Turtle("Alligator Snaping", "Amerika",
-                "Kura-kura ini memiliki tampilan paling seram dibandingkan yang lain.\n" +
-                        "\n" +
-                        "Tidak hanya seram, kura-kura ini juga bisa menggigit.", R.drawable.turtle_alligator));
-        Turtles.add(new Turtle("Asia Forest Tortoise", "Asia",
-                " Habitat asli mereka adalah semak belukar dan rerumputan.",R.drawable.turtle_asia));
-         Turtles.add(new Turtle("Cherry Head Tortoise", "Brazil",
-                "Corak oranye pada kepa dan cangkangnya membuat kura-kura ini tampak seperti ceri jika dilihat sepintas.", R.drawable.turtle_cherry));
-        Turtles.add(new Turtle("Radiated Tortoise", "Madagaskar",
-                "Kura-kura yang berasal dari Madagaskar ini memiliki corak yang sangat mencolok", R.drawable.turtle_radiated));
-        Turtles.add(new Turtle("Sulcata", "Afrika",
-                "Bernama sulcata tortoise, hewan berwarna kekuningan yang tinggal di iklim gurun ini ternyata dapat beradaptasi dengan iklim tropis di Indonesia.", R.drawable.turtle_sulcata));
-                return Turtles;
+    private static List<Kelinci> initDataKelinci(Context ctx) {
+        List<Kelinci> Kelincis= new ArrayList<>();
+        Kelincis.add(new Kelinci("Anggora", "turki",
+                "kelinci anggora memiliki ciri-ciri bulu yang tebal dan lembit. dan pada bagian ujung telinga dan kakinya memiliki bulu berwarna yang berbeda, ada yang berwarna puth, coklat, abu-abu dan hitam.\n" , R.drawable.kelinci_anggora));
+        Kelincis.add(new Kelinci("Rex", "Argentina",
+                " kelici ini dibudidayakan untuk diambil daging dan bulunya. Bulu pada kelinci Rex juga biaasnya dimanfaatkan untuk bahan baku jaket.",R.drawable.kelinci_rex));
+        Kelincis.add(new Kelinci("Himalaya", "Himalaya",
+                "Jenis kelinci yang satu ini cukup terkenal karena biasanya memiliki warna dasar putih dan warna lain pada bagian hidung, ekor, telinga, dan kaki.", R.drawable.kelinci_himalaya));
+        Kelincis.add(new Kelinci("Dutch", "Belanda",
+                "Kelinci ini termasuk kelinci yang paling banyak peminatnya di Indonesia, baik para peternak maupun para pecinta hewan peliharaan.", R.drawable.kelinci_dutch));
+        Kelincis.add(new Kelinci("satin", "Amerika",
+                "Jenis kelinci ini cukup unik, karena biasanya kelinci Satin lebih besar daripada jantan. Dan berat badannya berkisar diantara 3,8 – 5kg.", R.drawable.kelinci_satin));
+        Kelincis.add(new Kelinci("lyon", "Inggris",
+                " Bulunya yang lebat di bagian lehernya tampak seperti singa, sehingga jenis kelici ini diberi nama Lion.", R.drawable.kelinci_lyon));
+                return Kelincis;
     }
 
         private static void initAllHewans(Context ctx) {
         hewans.addAll(initDataKucing(ctx));
         hewans.addAll(initDataAnjing(ctx));
-        hewans.addAll(initDataTurtle(ctx));
+        hewans.addAll(initDataKelinci(ctx));
 
     }
 
