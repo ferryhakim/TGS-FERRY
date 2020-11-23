@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import simple.example.hewanpedia.model.Anjing;
-import simple.example.hewanpedia.model.Ayam;
 import simple.example.hewanpedia.model.Hewan;
 import simple.example.hewanpedia.model.Kucing;
+import simple.example.hewanpedia.model.Monyet;
 
 
 public class DataProvider {
@@ -47,26 +47,26 @@ public class DataProvider {
                 "Anjing dari daerah Shiba ini gesit dan lincah sehingga awalnya banyak digunakan untuk berburu ", R.drawable.dog_shiba));
         return anjings;
     }
-    private static List<Ayam> initDataAyam(Context ctx) {
-        List<Ayam> Ayams= new ArrayList<>();
-        Ayams.add(new Ayam("Cemani", "indonesia",
-                "Inilah jenis ayam khas dan asli milik negara kita, Indonesia. Asal nama cemani sendiri berasal dari bahasa Sansekerta yang jika diterjemahkan ke dalam bahasa Indonesia berarti hitam legam.\n" , R.drawable.ayam_cemani));
-        Ayams.add(new Ayam("cochin", "china",
-                "  Ayam jenis cochin memiliki bobot 4,5-5 kg untuk yang berjenis kelamin jantan dan 3,5-4 kg untuk yang berjenis kelamin betina.",R.drawable.ayam_cochin));
-        Ayams.add(new Ayam("orpingthon", "orpingthon",
-                "ayam ini adalah hasil dari persilangan antara ayam Minorca yang berkelamin jantan dengan dengan ayam Plymouth Rock betina berwarna hitam dan kemudian dari hasilnya persilangan kedua ayam tersebut dipersilangkan lagi dengan Ayam Langshan. ", R.drawable.ayam_orpingthon));
-        Ayams.add(new Ayam("polish", "poland",
-                "Ciri khas ayam poland yang paling menonjol adalah jambul di kepalanya yang bisa ditata dengan beragam bentuk. Bentuk jambulnya memang nyentrik.", R.drawable.ayam_polish));
-        Ayams.add(new Ayam("salkiehen", "china",
-                "Salah satu keunikan dari ayam silkia adalah dia memiliki jari yang berjumlah 5, berbeda dengan jenis ayam lainnya yang rata-rata memiliki jumlah jari sebanyak 4 saja. Keunikan lainnya adalah apabila kita cabut semua bulunya tersebut, maka dagingnya memiliki kemiripan dengan daging ayam cemani yaitu sama-sama memiliki warna hitam dan gelap baik kulit, ceker, paruh maupun organ dalamnya.", R.drawable.ayam_selkiehen));
+    private static List<Monyet> initDataMonyet(Context ctx) {
+        List<Monyet> Monyets= new ArrayList<>();
+        Monyets.add(new Monyet("colobus", "afrika",
+                "monyet colobus mempunyai kemiripan dengan panda. mereka hanya hidup diafrika dan makan dedaunan juga\n" , R.drawable.monyet_colobus));
+        Monyets.add(new Monyet("douc langur", "china",
+                " monyet ini mempunyai warna yang indah dan menarik perhatian bagi yang melihatnya. sehingga dinobatkan sebagai ratu spesies primata oleh wildlife at risk international organisation .",R.drawable.monyet_douc_langur));
+        Monyets.add(new Monyet("pigamy momoset", "amerika",
+                "Ini jenis monyet terkecil didunia. Monyet yang punya bulu-bulu berwarna keemasan ini suka sekali memakan cairan batang pada tumbuhan kayu. ", R.drawable.monyet_pigamy_marmoset));
+        Monyets.add(new Monyet("probocis", "indonesia",
+                "Ini monyet paling ganteng sedunia. iya dia suka mandi guys kakinya yang berselaput ini menjadi bukti kalau dia adalah perenang yang handal.", R.drawable.monyet_probocis));
+        Monyets.add(new Monyet("spider", "amerika",
+                " Hewan ini suka banget akrobatik. Dia dijuluki Spider Monkey karena kakinya yang panjang mirip laba-laba.", R.drawable.monyet_spider));
 
-                return Ayams;
-    }
+        return Monyets;    }
+    ;
 
         private static void initAllHewans(Context ctx) {
         hewans.addAll(initDataKucing(ctx));
         hewans.addAll(initDataAnjing(ctx));
-        hewans.addAll(initDataAyam(ctx));
+        hewans.addAll(initDataMonyet(ctx));
 
     }
 

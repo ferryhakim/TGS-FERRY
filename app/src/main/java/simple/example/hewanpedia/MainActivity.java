@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
     private void inisialisasiView() {
         btnKucing = findViewById(R.id.btn_buka_ras_kucing);
         btnAnjing = findViewById(R.id.btn_buka_ras_anjing);
-        btnAyam = findViewById(R.id.btn_buka_ras_ayam);
+        btnAyam = findViewById(R.id.btn_buka_ras_monyet);
         btnKucing.setOnClickListener(view -> bukaGaleri("Kucing"));
         btnAnjing.setOnClickListener(view -> bukaGaleri("Anjing"));
-        btnAyam.setOnClickListener(view -> bukaGaleri("Ayam"));
+        btnAyam.setOnClickListener(view -> bukaGaleri("Monyet"));
     }
 
     private void bukaGaleri(String jenisHewan) {
